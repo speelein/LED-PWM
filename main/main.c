@@ -48,7 +48,7 @@ ledc_channel_config(&ledc_channel_1);
 
 // Fading loop
 int duty1 = 0, duty2 = 0;
-int step1 = 10, step2 = 40;
+int step1 = 12, step2 = 40;
 while (1) {
 // LED 1: slow fade 1023
 duty1 += step1;
