@@ -13,7 +13,7 @@ https://RandomNerdTutorials.com/esp-idf-esp32-gpio-pwm-ledc/
 #define LEDC_CHANNEL_1 LEDC_CHANNEL_1
 #define LEDC_TIMER_0 LEDC_TIMER_0
 #define LEDC_MODE LEDC_LOW_SPEED_MODE
-#define LEDC_DUTY_RES LEDC_TIMER_11_BIT // 10-bit resolution (0-1023)
+#define LEDC_DUTY_RES LEDC_TIMER_11_BIT // 10/11-bit resolution (0-1023) (0 - 2047) geaendert Pruefer
 #define LEDC_FREQUENCY 1000 // 1 kHz for smooth fading
 
 void app_main(void)
@@ -48,7 +48,7 @@ ledc_channel_config(&ledc_channel_1);
 
 // Fading loop
 int duty1 = 0, duty2 = 0;
-int step1 = 12, step2 = 40;
+int step1 = 20, step2 = 120;
 while (1) {
 // LED 1: slow fade 1023
 duty1 += step1;
