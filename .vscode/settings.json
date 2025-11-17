@@ -1,13 +1,13 @@
 {
   "C_Cpp.intelliSenseEngine": "default",
-  "idf.espIdfPath": "/home/gunter/esp/v5.5/esp-idf",
+  "idf.espIdfPath": "/home/gunter/esp/v5.5.1/esp-idf",
   "idf.pythonInstallPath": "/usr/bin/python3",
   "idf.espAdfPath": "/home/gunter/.espressif/esp-adf",
   "idf.espMdfPath": "/home/gunter/.espressif/esp-mdf",
   "idf.openOcdConfigs": [
-    "board/esp32c6-builtin.cfg"
+    "board/esp32c6-ftdi.cfg"
   ],
-  "idf.port": "/dev/ttyAMA0",
+  "idf.port": "/dev/ttyACM0",
   "idf.toolsPath": "/home/gunter/.espressif",
   "idf.customExtraVars": {
     "IDF_TARGET": "esp32c6"
@@ -15,8 +15,8 @@
   "clangd.path": "/home/gunter/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clangd",
   "clangd.arguments": [
     "--background-index",
-    "--query-driver=/home/gunter/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
-    "--compile-commands-dir=${workspaceFolder}/build"
+    "--query-driver=/home/gunter/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc",
+    "--compile-commands-dir=/mnt/nvme/SSD/Daten/Visual-Studio/ESP-IDF/C6-Board/LED-PWM/build"
   ],
-  "idf.flashType": "JTAG"
+  "idf.flashType": "UART"
 }
